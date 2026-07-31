@@ -345,6 +345,76 @@
       font-size: 15px;
     }
 
+    /* ================= WEBINARS ================= */
+
+    .webinar-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .webinar-card {
+      border: 1px solid #dce7f5;
+      border-radius: 18px;
+      padding: 30px;
+      background: white;
+      transition: 0.25s;
+    }
+
+    .webinar-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(20, 67, 130, 0.10);
+    }
+
+    .webinar-date {
+      display: inline-block;
+      background: #eaf4ff;
+      color: #1269d8;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    .webinar-card h3 {
+      color: #06133f;
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .webinar-speaker {
+      color: #1269d8;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .webinar-card p {
+      color: #657189;
+      font-size: 15px;
+    }
+
+    .webinar-subheading {
+      color: #06133f;
+      font-size: 20px;
+      margin: 0 0 20px;
+    }
+
+    .webinar-grid + .webinar-subheading {
+      margin-top: 50px;
+    }
+
+    .webinar-card.upcoming {
+      border-color: #1269d8;
+    }
+
+    .webinar-date.upcoming {
+      background: #1269d8;
+      color: white;
+    }
+
     /* ================= PROGRAMS ================= */
 
     .programs {
@@ -830,7 +900,7 @@
 
         <div class="program-grid">
 
-          <div class="program-card" id="webinars">
+          <div class="program-card">
 
             <div class="icon">▣</div>
 
@@ -843,7 +913,7 @@
               researchers and professionals.
             </p>
 
-            <a href="#events" class="learn-more">
+            <a href="#webinars" class="learn-more">
               Explore Webinars →
             </a>
 
@@ -905,6 +975,164 @@
 
             <a href="#join" class="learn-more">
               Join Community →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= WEBINARS ================= -->
+
+    <section id="webinars">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="small-title">
+            Webinars
+          </div>
+
+          <h2>
+            Upcoming & Past Webinars
+          </h2>
+
+          <p>
+            Register for what's coming up, or catch up on sessions you
+            missed — recordings and speaker notes included.
+          </p>
+
+        </div>
+
+        <h3 class="webinar-subheading">Upcoming Webinars</h3>
+
+        <div class="webinar-grid">
+
+          <div class="webinar-card upcoming">
+
+            <div class="webinar-date upcoming">04 SEP 2026</div>
+
+            <h3>
+              Physics Careers Beyond Academia
+            </h3>
+
+            <p class="webinar-speaker">
+              With Dr. Farai Moyo, Industry Panel
+            </p>
+
+            <p>
+              A live panel on where a physics degree can take you outside
+              of the lecture hall — industry, policy and entrepreneurship.
+            </p>
+
+            <a href="#join" class="learn-more">
+              Register →
+            </a>
+
+          </div>
+
+
+          <div class="webinar-card upcoming">
+
+            <div class="webinar-date upcoming">29 SEP 2026</div>
+
+            <h3>
+              Writing Your First Research Proposal
+            </h3>
+
+            <p class="webinar-speaker">
+              With Dr. Zanele Khumalo, Research Fellow
+            </p>
+
+            <p>
+              A hands-on session on structuring a proposal, from problem
+              statement through to budget and timeline.
+            </p>
+
+            <a href="#join" class="learn-more">
+              Register →
+            </a>
+
+          </div>
+
+        </div>
+
+        <h3 class="webinar-subheading">Past Webinars</h3>
+
+        <div class="webinar-grid">
+
+          <div class="webinar-card">
+
+            <div class="webinar-date">15 JUL 2026</div>
+
+            <h3>
+              Careers in Physics Beyond Academia
+            </h3>
+
+            <p class="webinar-speaker">
+              With Dr. Amara Chukwu, Data Science Lead
+            </p>
+
+            <p>
+              A look at how a physics background opens doors in data
+              science, finance and engineering across the continent.
+            </p>
+
+            <a href="#" class="learn-more" target="_blank" rel="noopener">
+              Watch Recording →
+            </a>
+
+          </div>
+
+
+          <div class="webinar-card">
+
+            <div class="webinar-date">22 MAY 2026</div>
+
+            <h3>
+              Getting Started in Astrophysics Research
+            </h3>
+
+            <p class="webinar-speaker">
+              With Prof. Kwame Mensah, University of Ghana
+            </p>
+
+            <p>
+              Practical advice on finding research opportunities,
+              choosing a supervisor and publishing your first paper.
+            </p>
+
+            <a href="#" class="learn-more" target="_blank" rel="noopener">
+              Watch Recording →
+            </a>
+
+          </div>
+
+
+          <div class="webinar-card">
+
+            <div class="webinar-date">10 MAR 2026</div>
+
+            <h3>
+              Applying for Physics Postgraduate Funding
+            </h3>
+
+            <p class="webinar-speaker">
+              With Dr. Naledi Dube, Scholarship Advisor
+            </p>
+
+            <p>
+              A breakdown of scholarships and grants available to
+              African physics graduates, and how to apply well.
+            </p>
+
+            <a href="#" class="learn-more" target="_blank" rel="noopener">
+              Watch Recording →
             </a>
 
           </div>
